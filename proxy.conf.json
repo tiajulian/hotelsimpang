@@ -1,0 +1,10 @@
+{
+    "/assets": {
+      "target": "http://localhost:4200",
+      "secure": false,
+      "pathRewrite": {
+        "^/assets": "C:/Users/tiaju/OneDrive - Lumachain/Desktop/playground_repo/hotelsimpang/hotelsimpang-project/src/assets"
+      }
+    }
+  }
+  
