@@ -4,12 +4,14 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { IndexComponent } from './index/index.component';
 import { ProductsComponent } from './products/products.component';
 import {ToolbarComponent} from './toolbar/toolbar.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/index', pathMatch: 'full'},
   { path: 'index', component: IndexComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'products', component: ProductsComponent },
+  {path: 'contact', component: ContactComponent},
   { path: 'toolbar', component: ToolbarComponent }
 ];
 

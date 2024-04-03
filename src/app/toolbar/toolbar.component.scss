@@ -6,10 +6,10 @@ $toolbar-height: 60px;
     
     
     color: $toolbar-text-color;
-    padding: 20px 60px; // Add 'px' unit after the values
+    padding: 40px 80px 40px; // Add 'px' unit after the values
     display: flex;
     align-items: center;
-    justify-content: space-between; // Adjust horizontal alignment as needed
+    justify-content: center; // Adjust horizontal alignment as needed
     position: relative; // Remove fixed positioning
     z-index: 1000; // Ensure toolbar is above other content
 }

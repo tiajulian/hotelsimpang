@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import {Router,NavigationEnd} from '@angular/router';
 
 
 @Component({
@@ -10,7 +10,15 @@ import {Router} from '@angular/router';
 
 
 export class ToolbarComponent {
-  constructor(private router: Router) { }
+  activateButton: string='';
+
+  constructor(private router: Router) { 
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.highlightActivateButton();
+      }
+    });
+  }
     goToIndex(){ 
       this.router.navigate(['/','index']);}
     goToAboutUs(){
@@ -19,5 +27,28 @@ export class ToolbarComponent {
       this.router.navigate(['/','products']);}
     goToContact(){
       this.router.navigate(['/','contact']);}
+  
+
+
+  highlightActivateButton(){
+  const currentRoute = this.router.url.split('/')[1];
+  switch(currentRoute){
+    case 'index':
+      this.activateButton='Home';
+      break;
+    case 'about-us':
+      this.activateButton='About Us';
+      break;
+    case 'products':
+      this.activateButton='Rooms';
+      break;
+    case 'contact':
+      this.activateButton='Contact';
+      break;
+    default:
+      this.activateButton='';
+      break;
   }
+}
+}
 

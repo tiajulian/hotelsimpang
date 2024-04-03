@@ -1,0 +1,49 @@
+.content{
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    
+}
+.inner{
+
+    margin: 15px;
+    width: 70%;
+}
+
+.column {
+    float: left; /* Ensure columns are floated to the left */
+    width: calc(33.33 -20px) ; /* Set the width of the column */
+    margin: 0 15px;
+    box-sizing: border-box; /* Include padding and border in the column's total width */
+    padding: 0 15px; /* Add padding to the column */
+  }
+  
+  dt {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    padding:0
+    /* Add more styles as needed */
+  }
+  
+ dl{
+     /* Position the dl absolutely */
+    top: 0; /* Align the top of the dl to the top of its container */
+ }
+
+img{
+    width: 200px;
+    height: 300px ;
+ }
