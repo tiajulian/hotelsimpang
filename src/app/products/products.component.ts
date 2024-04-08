@@ -5,11 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent{
 
   constructor() { }
 
-  ngOnInit(): void {
+  openWhatsAppChat() {
+    const phoneNumber = '+628125699389';
+    const message = 'Hello, saya ingin booking kamar untuk tanggal (dd/mm/yyyy) apa masih tersedia?';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   }
 
 }

@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { WhatsappChatComponent } from './whatsapp-chat/whatsapp-chat.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,12 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     AboutUsComponent,
     ProductsComponent,
     ContactComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    WhatsappChatComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })

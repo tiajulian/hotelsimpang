@@ -2,10 +2,10 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a [routerLink]="['/index']" (click)="highlightActivateButton()">Home</a></li>
-            <li><a [routerLink]="['/about-us']" (click)="highlightActivateButton()">About Us</a></li>
-            <li><a [routerLink]="['/products']" (click)="highlightActivateButton()">Rooms</a></li>
-            <li><a [routerLink]="['/contact']" (click)="highlightActivateButton()">Contact</a></li>
+            <li [class.active]="activateButton === 'Home'"><a (click)="scrollToSection('home')">Home</a></li>
+            <li [class.active]="activateButton === 'Products'"><a (click)="scrollToSection('products')">Kamar</a></li>
+            <li [class.active]="activateButton === 'About Us'"><a (click)="scrollToSection('aboutus')">Lokasi</a></li>
+            <li [class.active]="activateButton === 'Contact'"><a (click)="scrollToSection('contact')">Contact</a></li>
         </ul>
     </nav>
 </div>
