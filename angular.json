@@ -32,7 +32,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "C:/Users/tiaju/OneDrive - Lumachain/Desktop/playground_repo/hotelsimpang/hotelsimpang-project/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "../hotelsimpang-project/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
