@@ -3,15 +3,19 @@
 
     background-image: url('wa.jpg');
     background-size: cover;
-    background-position: center;
-    // width: 100vh;
+    
+    background-position: 20% 50%;
+    min-width: 100vw;
     min-height: 100vh;
     color: white;
+    font-size: 1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
-    margin: 0   ;
+    margin: 1vw   ;
     
 }
+h1{font-size: 7vw;
+font-weight: bold;}
 
 .container {
     padding-left: 0;

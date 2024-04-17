@@ -1,18 +1,22 @@
 // styles.scss
 
 
-
+h1{
+  font-weight: bold;font-size: 7vw;}
 
 img {
-    width: 200px;
+  max-width: 100%;
+  height: auto;
+    margin: 1vw
   }
 
 .body{
 
 color: white;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-justify-content: center;
-align-items: center;
+// justify-content: center;
+// align-items: center;
+font-size: 2vw;
 background-color: black;
-margin: 15px;
+margin: 1vw;
 }

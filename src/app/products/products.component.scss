@@ -1,8 +1,11 @@
-h2 {
+// @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+h1 {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin: 5vh auto;
+    text-align: left;
+    margin: 1vw ;
+    font-size: 7vw;
+font-weight: bold;
    
 }
 
@@ -10,18 +13,25 @@ h2 {
 
 em {
     color: white;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button {
-    margin: 5px;
-    margin-left: 0;
+    
+    width: 15vw;
+    height: 6vh;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // justify-content: center;
-    // align-items: center;
+     align-items: left;
     // background-size: cover;
     // background-position: center;
     color: white;
@@ -46,19 +56,21 @@ button {
 .col{
     width:100% ;
    
-    padding: 0 15px;
-    margin: 20px;
-    flex: 1; /* Make columns flexible to distribute space evenly */
-    margin-right: 20px; /* Adjust the spacing between columns */
-    padding-bottom: 5%;
+    // padding: 0 15px;
+    // margin: 20px;
+    // flex: 1; /* Make columns flexible to distribute space evenly */
+    // margin-right: 20px; /* Adjust the spacing between columns */
+    // padding-bottom: 5%;
     border: 1px solid #ccc;
  
 }
 
-
+dd{font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
 dt {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     padding: 0;
 }
@@ -66,15 +78,24 @@ dt {
 dl {
     position: relative;
     top: 0;
+    font-size: 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
-    width: 200px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
     margin: 0%;
+    padding: 5%;
 }
 
 /* Adjustments for different screen sizes */
+@media screen and (max-width: 320px) {
+    .container {
+        min-width: 320px; /* Reduce height for smaller screens */
+    }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         min-height: 60vh; /* Reduce height for smaller screens */
